@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="eventmanagement.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="navBar.css"> -->
+</head>
+<body>
+ 
+  <!-- <header> -->
+    
+    <!-- <div class="topnav container-fluid">  -->
+
+      <!-- nav bar section -->
+  
+      <nav style="width:1300px;height:60px;" class="navbar md-4 navbar-expand-lg navbar-light bg-transperent fixed-top ">
+
+        <div class="container md-4">
+          <a class="navbar-brand fw-bolder text-white md-4" href="#">
+            <h1 style="font-family:  'Jacques Francois Shadow', cursive;, cursive; color: rgba(33, 185, 185, 0.939); ">
+              Couple Heart</h1> 
+           </a>
+          <div class="naverimager fa-beat">
+          <img class="navpic" src="./images/p1.png" alt="no img">
+          <a target="_blank" href=""></a></a>
+          </div> 
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+
+          <droupdownnav -->
+           <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav  ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active  text-white" aria-current="home" href="#">Home &nbsp;&nbsp;</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white " href="#venue" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Features
+                </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="#venue">Action</a></li>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#contact" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#contact">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Service
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#vendor">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#timeline">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Galary
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#spinner">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="#invite">Action</a></li>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>       
+      </nav> 
+<!-- <div class ="container md-4"> -->
+      
+        <div class="search-box">
+          <input type="text" placeholder="Type to search" class="search-txt">
+          <a target="_blank" href="https://www.google.co.in/" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+ 
+<header>
+
+  <div class="carouseltext md-4">
+    <h1 style="font-family:'Dancing Script md-4', cursive; font-weight: bolder;">love,<br><span
+        style="font-family:'Dancing Script', cursive;color: rgb(255, 255, 255);">laughter,<br></span><span
+        style="font-family:'Dancing Script', cursive;color: rgb(147, 4, 81);">and happily <span
+          style="font-family:'Dancing Script', cursive;color: rgb(255, 255, 255);">everafter..!</span></h1>
+</div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="./images/h1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./images/h2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/h3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </header>
+  <section id=timeline>
+    <h1 style="font-weight: 400;font-family: Cambria, Cochin, Georgia, Times,  serif; font-size:45px;">The Couple</h1>
+    <img style="margin-left: 490px;" src="./images/title-bottom.png" alt="">
+
+    <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+    <div class="demo-card-wrapper">
+      <div class="demo-card demo-card--step2">
+        <div class="head">
+          <div class="number-box">
+            <span>jan22</span>
+          </div>
+          <h2 style="font-family: 'Gill Sans', ' 'Trebuchet MS', sans-serif;"><span class="small"></span>
+            <p style="font-size:35px;">Jessica Rothe</p>
+          </h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/bride.webp" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step2">
+        <div class="head">
+          <div class="number-box">
+            <span>jan22</span>
+          </div>
+          <h2 style="font-family: 'Gill Sans', ' 'Trebuchet MS', sans-serif;"><span class="small"></span>
+            <p style="font-size: 35px;">james wilyam</p>
+          </h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/groom4.webp" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step3">
+        <div class="head">
+          <div class="number-box">
+            <span>july4</span>
+          </div>
+          <h2><span class="small"></span>john devid</h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/handsome.webp" alt="Graphic"> 
+        </div>
+      </div>
+
+
+
+      <div class="demo-card demo-card--step3">
+        <div class="head">
+          <div class="number-box">
+            <span>july4</span>
+          </div>
+          <h2><span class="small"></span> angelina</h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/love.png" alt="Graphic"> 
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step5">
+        <div class="head">
+          <div class="number-box">
+            <span>feb14</span>
+          </div>
+          <h2><span class="small"></span> Ameliya</h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/bride7.webp" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step5">
+        <div class="head">
+          <div class="number-box">
+            <span>feb14</span>
+          </div>
+          <h2><span class="small"></span>Christopher</h2>
+        </div>
+        <div class="body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur,
+            laudantium odio dolorum laboriosam.</p>
+          <img src="./images/groom-5webp.webp" alt="Graphic">
+        </div>
+      </div>
+      </header>
+  </section>
+ 
+  <!-----------------------------vendor------------------->
+  <section class="vendor" id="vendor">
+    <div class="title">
+      <h1><span>F</span>eatured <span>V</span>endor</h1>
+    </div>
+    <div class="vendor-list">
+      <div class="vendor-row">
+        <div class="rate">4.5&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im1.jpg" alt="img">
+        <h2>Beauty tales by komal rai</h2>
+        <p>Bridal Makeup</p>
+        <h3>Rs.20,000 onwards</h3>
+      </div>
+      <div class="vendor-row">
+        <div class="rate">4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im2.jpg" alt="img">
+        <h2>Flinters Management</h2>
+        <p>Wedding Planner</p>
+        <h3>Rs.2.5-4 Lakh</h3>
+      </div>
+      <div class="vendor-row">
+        <div class="rate">5.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im3.jpg" alt="img">
+        <h2>Wedding Mela</h2>
+        <p>Wedding Decorators</p>
+        <h3>Rs.80,000-30,00,000</h3>
+      </div>
+      <div class="vendor-row">
+        <div class="rate">4.1&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im4.jpg" alt="img">
+        <h2>SeventhHeaven Wedding Company</h2>
+        <p>Wedding Decorators-Rental Only</p>
+        <h3>Rs.80,000 Onwards</h3>
+      </div>
+      <div class="vendor-row">
+        <div class="rate">4.3&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im5.jpg" alt="img">
+        <h2>Wedding Mela</h2>
+        <p>Wedding Decorators</p>
+        <h3>Rs.80,000-30,00,000</h3>
+      </div>
+      <div class="vendor-row">
+        <div class="rate">4.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+        <img src="./images/im6.jpg" alt="img">
+        <h2>Wedding Mela</h2>
+        <p>Wedding Decorators</p>
+        <h3>Rs.1.8 Lakh</h3>
+      </div>
+    </div>
+  </section>
+
+  <div>
+
+    <section id=timeline>
+      <h1 style="font-weight: 400;font-family: Cambria, Cochin, Georgia, Times,  serif; font-size:45px;">gallery</h1>
+      <img style="margin-left: 490px;" src="./images/title-bottom.png" alt="no imags">
+  </div>
+  <div class="spinner mt-5">
+
+
+    <!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg"> -->
+    <div id="carousel">
+      <figure id="spinner">
+        <img src="https://images.pexels.com/photos/12103483/pexels-photo-12103483.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/10294550/pexels-photo-10294550.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/13942271/pexels-photo-13942271.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/6771523/pexels-photo-6771523.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/11984587/pexels-photo-11984587.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/7178869/pexels-photo-7178869.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/3647319/pexels-photo-3647319.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+        <img src="https://images.pexels.com/photos/4997169/pexels-photo-4997169.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt>
+      </figure>
+    </div>
+    <span style="float:left" class="ss-icon " onclick="galleryspin('-')">&lt;</span>
+    <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+    <div>
+
+
+    </div>
+    <input id="prevbtn" type="button" class="btn btn-secondary " onclick="galleryspin('-')" value="<Prev"></button>
+    <input id="nextbtn" type="button" class="btn btn-secondary " value="Nevt>" onclick="galleryspin('')"></button>
+  </div>
+
+  <div class="bgvideo ">
+   <video id="vdo" autoplay loop  play-inline >
+    <source src="./images/bgvideo.mp4"type="video/mp4">
+   </video>
+ 
+  </div>
+<br><br><br><br><br><br><br><br><br>
+<br>  <br>  <br>
+<br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+  <br>  <br>  <br
+>  <br>  <br><br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+<br>  <br>  <br
+>  <br>  <br><br>  <br>
+ <br>  <br><br>  <br>
+  <br>  <br><br>  <br>
+  <!----------------------------venue Section-------------->
+
+  <section class="venue mt-3" id="venue">
+    <div class="title">
+      <h1><span>V</span>enues</h1>
+    </div>
+    <div class="venue-list">
+      <div class="venue-box">
+        <img
+          src="https://img.freepik.com/free-photo/chair-table-dinning-beach-sea-with-blue-sky_74190-6094.jpg?size=626&ext=jpg&uid=R61339298&ga=GA1.1.115437306.1615625328&semt=ais"
+          alt="img">
+        <div class="venue-info">
+          <h2>Goa</h2>
+          <p>Azaya Beach Resort, Goa </p>
+          <!-- <i style="color: rgb(18, 18, 18);" class="fa-sharp fa-solid fa-location-dot"></i> -->
+
+          <a
+            href="https://www.google.com/search?q=Goa+Azaya+Beach+Resort%2C+Goa&sxsrf=AJOqlzX3yTwNQU_8uTSaRjMGlN7pnOR-Pg%3A1676893914707&source=hp&ei=2l7zY46WKYTdz7sPw--PuAc&iflsig=AK50M_UAAAAAY_Ns6nNtskvg-8ejBkITUKVUVjAhA-0u&ved=0ahUKEwiO6_DQhKT9AhWE7nMBHcP3A3cQ4dUDCAc&uact=5&oq=Goa+Azaya+Beach+Resort%2C+Goa&gs_lcp=Cgdnd3Mtd2l6EAMyCQgAEBYQHhDxBDoHCCMQ6gIQJ1CrDFirDGCuFWgBcAB4AIABc4gBc5IBAzAuMZgBAKABAqABAbABCg&sclient=gws-wiz">
+            <button class="btn">More Info</button></a>
+          <a
+            href="https://www.google.com/maps/place/അജയ്+ബീച്ച്+റിസോർട്ട്+ഗോ/@15.2410118,73.9273599,15z/data=!4m20!1m10!3m9!1s0x3bbfbe92763f6409:0xa43eea71afd29ede!2z4LSF4LSc4LSv4LWNIOC0rOC1gOC0muC1jeC0muC1jSDgtLHgtL_gtLjgtYvgtbzgtJ_gtY3gtJ_gtY0g4LSX4LWL!5m2!4m1!1i2!8m2!3d15.2410118!4d73.9273599!16s%2Fg%2F11gf9msymc!3m8!1s0x3bbfbe92763f6409:0xa43eea71afd29ede!5m2!4m1!1i2!8m2!3d15.2410118!4d73.9273599!16s%2Fg%2F11gf9msymc"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+      </div>
+
+
+
+      <div class="venue-box">
+        <img
+          src="https://images.pexels.com/photos/13207993/pexels-photo-13207993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img">
+        <div class="venue-info">
+          <h2>Jaipur</h2>
+          <p>The Raj Palace</p>
+          <button class="btn">More Info</button>
+          <a
+            href="https://www.google.com/maps/place/ദ+രാജ്+പാലസ്+ബി+സ്മോൾ+ലക്ഷ്വറി+ഹോട്ടൽസ്+ഓഫ്+ദ+വേൾഡ്/@26.9353325,75.8351979,15z/data=!4m9!3m8!1s0x396db13c7f9cabdb:0x2ef287607dbb0d88!5m2!4m1!1i2!8m2!3d26.9353325!4d75.8351979!16s%2Fg%2F11bwdxqsl9"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+
+      </div>
+      <div class="venue-box">
+        <img
+          src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img">
+        <div class="venue-info">
+          <h2>Udaipur</h2>
+          <p>Taj Aravalli Resort and Spa</p>
+          <a
+            href="https://www.google.com/search?hotel_occupancy=2&sxsrf=AJOqlzWszgzxGDl7ZpxaTrYpdR23dWNIQw:1676895247982&q=Udaipur+Taj+Aravali+Resort+and+Spa&spell=1&sa=X&ved=2ahUKEwiti9PMiaT9AhUr6HMBHe8ND2EQBSgAegQICRAB&biw=1240&bih=571&dpr=1.5">
+            <button class="btn">More Info</button></a>
+          <a
+            href="https://www.google.com/maps/place/താജ്+അരാവലി+റിസോർട്ട്+%26+സ്പാ,+ഉദയ്%E2%80%8Cപൂർ/@24.5792506,73.6114615,15z/data=!4m9!3m8!1s0x3967fa894614443b:0xc553712b1f5e6708!5m2!4m1!1i2!8m2!3d24.5792506!4d73.6114615!16s%2Fg%2F11f66tcnwx"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="https://images.pexels.com/photos/10603649/pexels-photo-10603649.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="img">
+        <div class="venue-info">
+          <h2>Thailand</h2>
+          <p>Prince Palace Hotel</p>
+          <a
+            href="https://www.google.com/search?q=Prince+Palace+Hotel&hotel_occupancy=2&sxsrf=AJOqlzU-NpPs7FnP9QyBPmko4udJDcMcng%3A1676894668403&ei=zGHzY5emGMqVmgeo46PYBQ&ved=0ahUKEwiXvKS4h6T9AhXKiuYKHajxCFsQ4dUDCA4&uact=5&oq=Prince+Palace+Hotel&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIHCAAQsAMQQzIHCAAQsAMQQ0oECEEYAFAAWABgnQVoAXABeACAAQCIAQCSAQCYAQDIAQrAAQE&sclient=gws-wiz-serp"><button
+              class="btn">More Info</button></a>
+          <a
+            href="https://www.google.com/maps/place/Prince+Palace+Hotel/@13.7539382,100.515836,15z/data=!4m9!3m8!1s0x30e29939a126cb61:0xc03969aa5f27b82f!5m2!4m1!1i2!8m2!3d13.7539382!4d100.515836!16s%2Fg%2F1hc8w2dcr"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img
+          src="https://images.pexels.com/photos/12460246/pexels-photo-12460246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img">
+        <div class="venue-info">
+          <h2>Mumbai</h2>
+          <p>Grand Banquet, Chembur</p>
+          <a
+            href="https://www.google.com/search?q=Grand+Banquet%2C+Chembur&hotel_occupancy=2&sxsrf=AJOqlzWj_y5FOXy02bjHoooKZTvT8BEr1Q%3A1676894736869&ei=EGLzY9_WNJTnz7sPlYO6qA0&ved=0ahUKEwjfnvfYh6T9AhWU83MBHZWBDtUQ4dUDCA4&uact=5&oq=Grand+Banquet%2C+Chembur&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQywEyCQgAEBYQHhDxBDIGCAAQFhAeMgkIABAWEB4Q8QQyCQgAEBYQHhDxBDoKCAAQRxDWBBCwAzoHCAAQsAMQQ0oECEEYAFDlEljlEmDYKWgBcAF4AIABe4gBe5IBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz-serp"><button
+              class="btn">More Info</button></a>
+          <a
+            href="https://www.google.com/maps/place/ഗ്രാൻഡ്+ബാങ്ക്വേറ്റ്+ഹാൾ/@19.0615748,72.9129274,15z/data=!4m6!3m5!1s0x3be7c617172f55ab:0x31d2e47a203792c4!8m2!3d19.0615748!4d72.9129274!16s%2Fg%2F11dxlg35jr"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="https://www.deltin.com/assets/subprop/sub_album_pic4620200425.1819.jpeg" alt="img">
+        <div class="venue-info">
+          <h2>Daman</h2>
+          <p>The Deltin,Daman</p>
+          <a
+            href="https://www.google.com/search?q=The+Deltin%2CDaman&hotel_occupancy=2&sxsrf=AJOqlzU50lVhqF0kongG9BIppn8oLzHL9Q%3A1676894825097&ei=aWLzY9rBBciaz7sP6_StsA8&ved=0ahUKEwiamoCDiKT9AhVIzXMBHWt6C_YQ4dUDCA4&uact=5&oq=The+Deltin%2CDaman&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywFKBAhBGABQAFgAYPIJaABwAXgAgAGLAYgBiwGSAQMwLjGYAQCgAQKgAQHAAQE&sclient=gws-wiz-serp">
+            <button class="btn">More Info</button></a>
+          <a
+            href="https://www.google.com/maps/place/The+Deltin,+Daman+%7C+5+Star+Resort/@20.4129739,72.8566864,15z/data=!4m2!3m1!1s0x0:0x3c2556043e36c9ba?sa=X&ved=2ahUKEwj9w8__jKT9AhUe7XMBHRNfAIMQ_BJ6BQiJARAH"><i
+              class="fa-solid fa-location-dot f"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+
+  <!------------------E-invitation------------------>
+  <section class="invite" id="invite">
+    <div class="title">
+      <h1>Card<span>Design</span></h1>
+      <p>Choose the best card Design.</p>
+    </div>
+    <div class="invitation-row">
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/6931/simple-swirls-foil-wedding-invitations-up-l.jpg.webp?q=1578420454"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/3398/perfectly-personalized-portrait-wedding-invitations-up-l.jpg.webp?q=1602617370"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/3460/mason-jars---fireflies-wedding-invitations-up-l.jpg.webp?q=1638563593"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/7290/delicate-laurel-wedding-invitations-up-l.jpg.webp?q=1578582818"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/20302/hawaii-palm-leaves-wedding-invitations-up-l.jpg.webp?q=1645563119"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/8206/elegant-script-foil-wedding-invitations-up-l.jpg.webp?q=1598881529"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/10612/radiant-garden-wedding-invitations-up-l.jpg.webp?q=1578419446"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/10460/alluring-florals-wedding-invitations-up-l.jpg.webp?q=1638551070"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/19430/indian-paisley-wedding-invitations-up-l.jpg.webp?q=1651175710"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/3255/stacked-photo-wedding-invitations-up-l.jpg.webp?q=1628779409"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/11894/sunflower-frame-wedding-invitations-up-l.jpg.webp?q=1638480373"
+          alt="">
+      </div>
+      <div class="invitation-box">
+        <img
+          src="https://d2wi55zl4h3jkw.cloudfront.net/media/bi/15313/peony-draped-wedding-invitations-up-l.jpg.webp?q=1645812315"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------------footer section--------------------------->
+  <footer id="contact">
+    <div class="container">
+      <div class="f-container">
+        <h2>Couple Heart - Your Personal Wedding Planner</h2><br>
+        <p>Plan your wedding with Us Couple Heart is an Indian Wedding Planning Website </p>
+        <div>
+          <button class="btn">Register as a Vendor</button>
+        </div>
+        <div class="social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+      <div class="f-container">
+        <h2>Our Location</h2>
+        <a href="#"><i class="fas fa-angle-right"></i>Anand</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Vadodara</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Mumbai</a>
+        <a href="#"><i class=" fas fa-angle-right "></i>Ahemdabad</a>
+        <a href=" # "><i class=" fas fa-angle-right "></i>Surat</a>
+      </div>
+
+      <div class=" f-container ">
+        <h2>Our Newsletter</h2>
+        <p>Subscribe for latest updates</p>
+        <input type=" text " placeholder=" Enter Your Email ">
+        <button class=" btn ">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class=" copyright ">
+    <p>Copyright ©2023 All Rights Reserved by vijayjack.</p>
+
+</body>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+
+<script>
+
+
+  $(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 150) {
+      $("#main-navbar").addClass("navbar-scroll")
+    }
+    else {
+      $("#main-navbar1").removeClass("navbar-scroll")
+    }
+  });
+
+</script>
+
+
+  <script>
+
+      let nav = document.querySelector("nav");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 600) {
+          nav.classList.add("bg-dark", "shadow");
+          nav.classList.remove("bg-transparent");
+        } else {
+          nav.classList.remove("bg-light", "shadow");
+          nav.classList.add("bg-transparent");
+        }
+      });
+
+    </script>
+<script>
+  var angle = 0;
+  function galleryspin(sign) {
+    spinner = document.querySelector("#spinner");
+    if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+    spinner.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
+  }
+
+</script>
+
+
+<script>
+
+
+
+
+                /*!
+                 * parallax.js v1.4.2 (https://pixelcog.github.io/parallax.js/)
+                 * @copyright 2016 PixelCog, Inc.
+                 * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
+                 
+
+
+
+              <script src="https://use.fontawesome.com/9f1090cfce.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Scrolling Nav smooth JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+<script src="js/scrolling-nav.js"></script>
+<!-- Parallax jQuery -->
+<script src="parallax/parallax.min.js"></script>
+
+</html>
